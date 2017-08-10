@@ -1,0 +1,14 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block body %}
+    <p>liste de {{ name }}</p>
+    <ul>
+        {% for key, name in data %}
+            {% if name == "mehdi" %}
+                <li style="background: #71c6ff">{{ name }}</li>
+        {% else %}
+                <li>{{ key }} : {{  name }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}
