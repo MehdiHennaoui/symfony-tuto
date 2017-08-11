@@ -27,7 +27,8 @@ class DefaultController extends Controller
                     ->getForm();
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()) {
-            dump($form->getData());
+            $name = $form->getData()['name'];
+            //envoie par mail
         }
         return $this->render('ContactBundle:Default:index.html.twig', array(
             "myform"=>$form->createView()

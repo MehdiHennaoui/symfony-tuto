@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Formulaire Email Contact{% endblock %}
+
+{% block body %}
+ {{ form_start(mailform) }}
+ {{ form_widget(mailform) }}
+ {{ form_end(mailform) }}
+{% endblock %}
