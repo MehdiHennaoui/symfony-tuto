@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+
+
+<h1>home page MyBundle</h1>
+    <a href="{{ path("test_url_about") }}" class="btn btn-default">about</a>
+    <hr>
+    <a href={{ path("test_url_info" , { name: "serge" }) }} >info</a>
+{% endblock %}
