@@ -1,3 +1,8 @@
+contact:
+    resource: "@ContactBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 My:
     resource: "@UrlMyBundle/Controller/"
     type:     annotation
